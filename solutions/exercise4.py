@@ -14,7 +14,7 @@ def readcsv(filename):
 
 def dow_births(data):
     births_per_day = {}
-    for item in cdc_list:
+    for item in data:
         day = item[3]
         births = item[4]
         if day in births_per_day:

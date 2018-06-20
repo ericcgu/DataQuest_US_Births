@@ -22,7 +22,7 @@ def readcsv(filename):
 
 def calc_counts(data, column_index):
     sums_dict = {}
-    for item in cdc_list:
+    for item in data:
         column_value = item[column_index]
         births = item[4]
         if column_value in sums_dict:

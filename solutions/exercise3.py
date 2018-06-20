@@ -22,7 +22,7 @@ def readcsv(filename):
 
 def month_births(data):
     births_per_month = {}
-    for item in cdc_list:
+    for item in data:
         month = item[1]
         births = item[4]
         if month in births_per_month:
