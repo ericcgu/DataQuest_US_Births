@@ -23,7 +23,7 @@ def calc_counts(data, column_index):
             sums_dict[column_value] = births
     return sums_dict
 
-def difference_dict(input_dict):
+def calc_diffs(input_dict):
     diff_dict = {}
     keys = list(input_dict.keys())
     for key in keys[1:]:
@@ -33,4 +33,4 @@ def difference_dict(input_dict):
 cdc_list = readcsv('data/US_births_1994-2003_CDC_NCHS.csv')
 cdc_year_births = calc_counts(cdc_list, 0)
 print(cdc_year_births)
-print(difference_dict(cdc_year_births))
+print(calc_diffs(cdc_year_births))
