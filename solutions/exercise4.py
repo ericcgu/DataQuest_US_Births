@@ -24,4 +24,5 @@ def dow_births(data):
     return births_per_day
 
 cdc_list = readcsv('data/US_births_1994-2003_CDC_NCHS.csv')
-print(dow_births(cdc_list))
+cdc_day_births = dow_births(cdc_list)
+print(cdc_day_births)
