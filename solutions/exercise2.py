@@ -24,4 +24,3 @@ def readcsv(filename):
 
 cdc_list = readcsv('data/US_births_1994-2003_CDC_NCHS.csv')
 print(cdc_list[:11])
-
