@@ -34,7 +34,6 @@ def max_value(input_map):
 def min_value(input_map):
     min_key = min(list(input_map))
     min_count = input_map[list(input_map)[0]]
-
     for key, value in input_map.items():
         if value < min_count:
             min_key = key
